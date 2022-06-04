@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="dangky.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.min.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <title>Form login unitop.vn</title>
+</head>
+
+<body>
+
+    <style>
+        .dangky-box {
+            text-align: center;
+            position: absolute;
+            width: 60%;
+            background-color: rgb(250, 250, 250);
+            box-shadow: -1px 1px 40px 0 #666;
+            top: 50px;
+            left: 300px;
+        }
+        
+        .dangky-box input {
+            width: 98%;
+            height: 25px;
+            margin-bottom: 10px;
+        }
+        
+        .dangky-box [type="submit"] {
+            width: 100%;
+            height: 40px;
+            color: white;
+            font-weight: bold;
+            background-color: rgb(18, 126, 226);
+            border: 1px solid rgb(18, 126, 226);
+            margin-bottom: 10px;
+        }
+    </style>
+    <div class="wrapper">
+        <div class="dangky-box">
+            <h2>ĐĂNG NHẬP TÀI KHOẢN</h2>
+            <h4>Bạn có tài khoản chưa ? <a href="login.html">Đăng nhập tại đây</a></h4>
+            <p>THÔNG TIN CÁ NHÂN</p>
+
+            <from id="target" action="login.html">
+                <label for="họ">Họ Tên</label>
+                <input type="text" id="họ" name="Họ tên" placeholder=" Nhập họ tên...">
+                <label for="Tên"> Tên</label>
+                <input type="text" id="tên" name=" Tên" placeholder=" Nhập tên của bạn...">
+                <label for="sđt"> Số điện thoại</label>
+                <input type="text" id="sđt" name=" Số điện thoại" placeholder=" Nhập sđt của bạn...">
+                <label for="email"> Email</label>
+                <input type="text" id="email" name="Email" placeholder=" Nhập Email của bạn...">
+                <label for="matkhau"> Mật khẩu</label>
+                <input type="text" id="matkhau" name="Mật khẩu" placeholder=" Nhập mật khẩu của bạn...">
+                <label for="laimatkhau">Nhập lại Mật khẩu</label>
+                <input type="text" id="lai matkhau" name=" Nhập lại mật khẩu" placeholder=" Nhập lại mật khẩu của bạn...">
+                <input type="submit" value=" Đăng Ký">
+            </from>
+        </div>
+    </div>
+
+</body>
+
+</html>

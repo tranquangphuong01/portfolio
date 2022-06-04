@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header-wrapper {
+    background-image: linear-gradient(to right, #0591f5, #50f9b7);
+}
+
+.dang-ki {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dang-ki h3 {
+    color: rgb(245, 240, 240);
+    margin-top: 35px;
+    margin-left: 30px;
+    font-size: 14px;
+}
+
+.dang-ki a {
+    text-decoration: none;
+}
+
+.dang-ki h3:hover {
+    color: rgb(3, 240, 74);
+}
+
+h4 {
+    margin-left: 30px;
+    margin-top: 10px;
+    color: rgb(255, 253, 253);
+    font-size: 15px;
+}
+
+p {
+    margin-top: 10px;
+    margin-left: 30px;
+    color: rgb(255, 253, 253);
+    font-size: 15px;
+}
+
+.dang-ki p:hover {
+    color: rgb(33, 201, 11);
+}
+
+#search-box {
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
+#search-box #search-text {
+    padding: 1px 10px;
+    border-radius: 50px;
+}
+
+#search-box #search-btn {
+    font-size: 11px;
+    padding: 0px 5px;
+    cursor: pointer;
+}
+
+
+/*phan menu {}*/
+
+.container {
+    max-width: 930px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+}
+
+#main-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 70px;
+}
+
+#main-menu li {
+    position: relative;
+}
+
+#main-menu li a {
+    color: rgb(3, 2, 2);
+    display: block;
+    padding: 18px 28px;
+    text-decoration: none;
+}
+
+#main-menu ul .sub-menu {
+    position: absolute;
+    background-color: rgb(241, 123, 4);
+    width: 150px;
+    margin-left: 20px;
+    list-style: none;
+    display: none;
+}
+
+#main-menu li:hover ul .sub-menu {
+    display: block;
+}
+
+#main-menu ul .sub-menu a {
+    padding: 8px 15px;
+}
+
+
+/*---------------------------------------------------phần đề demo---------------------*/
+
+.demo-img img {
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.demo-header {
+    display: flex;
+}
+
+.demo-ten {
+    margin-top: 200px;
+    margin-left: 120px;
+}
+
+.demo-ten h2 {
+    font-size: 25px;
+    color: rgb(23, 23, 26);
+}
+
+.demo-xemthem h3 {
+    margin-top: 15px;
+    margin-left: 125px;
+    color: rgb(7, 5, 5);
+}
+
+.demo-xemthem h3:hover {
+    color: rgb(245, 181, 6);
+}
+
+
+/*---------------------------------Phan tieu de---------------------------*/
+
+#wrapper-menu {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.headline {
+    text-align: center;
+    margin: 40px 0px;
+    margin-top: 20px;
+}
+
+h5 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgb(126, 123, 123);
+    margin: 10px 0 20px;
+    line-height: 0.1em;
+    font-size: 18px;
+}
+
+h5 span {
+    background: #FFFFFF;
+    padding: 0 10px;
+}
+
+h2 {
+    font-size: 15px;
+}
+
+
+/*------------------------------------------phần sản phẩm----------------------------*/
+
+.product-img-5 img {
+    width: 280px;
+    height: 280px;
+}
+
+.wrapper-5 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.products-5 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-img-5 {
+    padding: 0 10px;
+}
+
+.wrapper-5>.products-5 .product-img-5 {
+    position: relative;
+}
+
+.wrapper-5>.products-5 .product-img-5 .product-panel-hide {
+    opacity: 0;
+    position: absolute;
+    right: 0;
+}
+
+.wrapper-5>.products-5 .product-img-5 .product-panel-hide:hover {
+    opacity: 1;
+}

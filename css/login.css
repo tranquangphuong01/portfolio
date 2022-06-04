@@ -1,0 +1,44 @@
+.shop-header {
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.shop-header a {
+    text-decoration: none;
+    padding: 0px 5px
+}
+
+
+/*---------phần dưới -------*/
+
+.login-box {
+    text-align: center;
+    position: absolute;
+    padding: 40px;
+    background-color: rgb(250, 250, 250);
+    top: 15%;
+    left: 30%;
+    box-shadow: -1px 1px 40px 0 #666;
+}
+
+.login-box input {
+    width: 93%;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+.login-box [type="submit"] {
+    width: 100%;
+    height: 40px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(18, 126, 226);
+    border: 1px solid rgb(18, 126, 226);
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.main-icon {
+    text-decoration: none;
+    padding: 16px;
+}

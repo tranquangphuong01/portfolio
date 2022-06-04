@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/home.css">
+    <link href="font/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="images/anh0.jpg">
+    <link rel="stylesheet" href="js/snow.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-image: url("../images/anh0.jpg");
+            background-size: cover;
+        }
+        
+        .header-top {
+            background-color: #0093E9;
+            background-image: linear-gradient(to right, #50f9b7, #0591f5);
+            padding: 3px 0px;
+            margin-top: -10px;
+            margin-left: -8px;
+            margin-right: -8px;
+        }
+        
+        .container-tel {
+            display: flex;
+            list-style: none;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .container-home {
+            display: flex;
+            list-style: none;
+        }
+        
+        .container-tel li a {
+            text-decoration: none;
+            padding: 0px 10px;
+        }
+        
+        .container-home li a {
+            text-decoration: none;
+            padding: 0px 10px;
+            margin-right: 10px;
+        }
+        /*-------phần ảnh-------*/
+        
+        .wrapper {
+            background-color: #50f9b7;
+            width: 300px;
+            height: 600px;
+            margin-left: -10px;
+            border: 1px solid #797c7b;
+        }
+        
+        .wrapper-img img {
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            margin-left: 80px;
+            margin-top: 20px;
+        }
+        
+        h2 {
+            margin-left: 80px;
+            margin-top: -1px;
+        }
+        /*-------phần menu-------*/
+        
+        .header {
+            list-style: none;
+            margin-left: 50px;
+        }
+        
+        .header li {
+            padding: 25px 0px;
+        }
+        
+        .header li a {
+            text-decoration: none;
+        }
+        /*--------menu con---------*/
+        
+        .sub-menu {
+            background: aliceblue;
+            border: 1px solid #797c7b;
+            list-style: none;
+            display: none;
+            margin-left: 170px;
+            margin-top: -40px;
+            width: 100px;
+        }
+        
+        .sub-menu li {
+            padding: 7px 0px;
+        }
+        
+        .wrapper li:hover .sub-menu {
+            display: block;
+        }
+        
+        .sub-menu li a {
+            margin-left: -30px;
+        }
+    </style>
+    <div class="header-top">
+        <div class="container">
+            <ul class="container-tel">
+                <li>
+                    <a href=""><i class="fa fa-phone"></i>
+                    0388942186</a>
+                </li>
+                <li>
+                    <a href=""><i class="fa fa-envelope"></i>
+                    tranquang_01@gmail.com</a>
+                </li>
+            </ul>
+            <ul class="container-home">
+                <li>
+                    <a href="login.html"><i class="fa-solid fa-house-chimney"></i>
+                    Trang chủ</a>
+                </li>
+                <li>
+                    <a href="login.html"><i class="fa-regular fa-right-from-bracket"></i>
+                    Đăng xuất</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="wrapper-header">
+            <div class="wrapper-img">
+                <img src="images/admin.png" alt="" width="80px" height="80px">
+                <h2>Admin</h2>
+            </div>
+            <div class="wrapper-menu">
+                <div class="header">
+                    <li>
+                        <a href=""><i class="fa-brands fa-apple"></i>
+                            Hệ Thống <i class="fa-regular fa-angle-down"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-brands fa-safari"></i>
+                            Thông Tin Chung <i class="fa-regular fa-angle-down"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-regular fa-sliders"></i>
+                            Quản Lý Danh Mục <i class="fa-regular fa-angle-down"></i>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="">Thêm sản phẩm</a></li>
+                            <li><a href="">Sửa sản phẩm</a></li>
+                            <li><a href="">Xoá sản phẩm</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-regular fa-sliders"></i>
+                            Quản lý Tin Tức <i class="fa-regular fa-angle-down"></i>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="">Tin tức mới nhất</a></li>
+                            <li><a href="">Tin tức cũ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-regular fa-user"></i>
+                            Quản Lý User <i class="fa-regular fa-angle-down"></i>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="">Quản lý nhân viên</a></li>
+                            <li><a href="">Khách hàng</a></li>
+                        </ul>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <from action="" id="search-box">
+        <input type="text" id="search-text" placeholder=" Helo bạn muốn tìm gì?">
+        <button id="search-btn">Tìm Kiếm</button>
+    </from>
+    </div>
+    </div>
+
+
+
+    <!------------phần bên dưới------------->
+    <div class=""></div>
+
+
+
+
+</body>
+
+</html>

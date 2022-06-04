@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/home.css">
+    <link href="font/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="images/anh0.jpg">
+    <link rel="stylesheet" href="js/snow.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.min.css">
+    <title>quản lý sản phẩm</title>
+</head>
+
+<body>
+    <style>
+        .container {
+            background-color: #0093E9;
+            background-image: linear-gradient(to right, #50f9b7, #0591f5);
+            padding: 3px 0px;
+            margin-top: -10px;
+            margin-left: -8px;
+            margin-right: -8px;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .header-tel {
+            display: flex;
+            list-style: none;
+        }
+        
+        .header-tel a {
+            text-decoration: none;
+            padding: 0px 15px;
+        }
+        
+        .container-home {
+            display: flex;
+            list-style: none;
+        }
+        
+        .container-home a {
+            text-decoration: none;
+            padding: 0px 15px;
+        }
+        /*----------------menu------------------------*/
+        
+        .main-menu-logo img {
+            border-radius: 50%;
+            margin-top: 15px;
+            margin-left: 40px;
+        }
+        
+        .main-menu-logo h2 {
+            margin-left: 43px;
+            margin-top: -5px;
+        }
+        
+        .menu li {
+            list-style: none;
+            padding: 10px 20px;
+        }
+        
+        .menu li a {
+            text-decoration: none;
+        }
+        
+        .wrapper {
+            display: flex;
+        }
+        /*---------tìm kiếm---------*/
+        
+        .search-box-menu {
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+        /*-----oder-menu----*/
+        
+        .oder-1 {
+            display: flex;
+        }
+        
+        .donhang {
+            background-image: linear-gradient(to right, #50f9b7, #0591f5);
+            width: 250px;
+            opacity: 1;
+            height: auto;
+            margin: 60px;
+        }
+        
+        .donhang p {
+            padding: 0px 90px;
+        }
+        /*^^^^^^^^^^^^danh sách sản phẩm^^^^^^^^^^^^^^^*/
+        
+        .menu-main-container {
+            border: 1px solid #b53;
+            border-radius: 1rem;
+            margin: 1rem;
+            padding: 1rem;
+        }
+        
+        .menu-main-container-header {
+            margin-bottom: 1rem;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .menu-main-container-tittle h3 {
+            font-size: 2rem;
+            padding-left: 340px;
+        }
+        
+        .button-them-content {
+            background-color: #b53;
+            width: 70px;
+            height: 50px;
+            margin-top: -15px;
+            border-radius: 10%;
+        }
+        
+        .button-them-content h4 {
+            padding-top: 15px;
+            padding-left: 15px;
+        }
+        /*-----danh sách sp----*/
+        
+        .menu-main-container-main {
+            margin-top: 2rem;
+            display: inline-block;
+            width: 100%;
+        }
+        
+        .menu-main-container-main .bangsanpham {
+            width: 100%;
+            font-size: 0.9rem;
+        }
+        
+        .tieudebangsanpham tr {
+            width: 100%;
+            height: 30px;
+        }
+        
+        .tieudebangsanpham tr th {
+            border-top: 1px solid #b53;
+            border-bottom: 1px solid #b53;
+            height: 50px;
+        }
+        
+        .thanbangsanpham tr td {
+            border-top: 1px solid #b53;
+            border-bottom: 1px solid #b53;
+            height: 50px;
+        }
+    </style>
+    <div class="container">
+        <div class="main-menu">
+            <div class="header">
+                <ul class="header-tel">
+                    <li>
+                        <a href=""><i class="fa fa-phone"></i>
+                0388942186</a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa fa-envelope"></i>
+                tranquang_01@gmail.com</a>
+                    </li>
+                </ul>
+                <ul class="container-home">
+                    <li>
+                        <a href="login.html"><i class="fa-solid fa-house-chimney"></i>
+                    Trang chủ</a>
+                    </li>
+                    <li>
+                        <a href="login.html"><i class="fa-regular fa-right-from-bracket"></i>
+                    Đăng xuất</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="wrapper">
+            <div claas="wrapper-menu">
+                <div class="main-menu">
+                    <div class="main-menu-logo">
+                        <img src="images/admin.png" alt="" width="85px" height="85px">
+                        <h2> Admin</h2>
+                    </div>
+                    <div class="menu">
+                        <li>
+                            <a href=""><i class="fa-brands fa-apple"></i>
+                                Quản lý người dùng <i class="fa-regular fa-angle-down"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-safari"></i>
+                                Quản lý sản phẩm <i class="fa-regular fa-angle-down"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-regular fa-sliders"></i>
+                                Quản lý nguyên liệu <i class="fa-regular fa-angle-down"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-regular fa-user"></i>
+                                Quản lý đơn hàng <i class="fa-regular fa-angle-down"></i>
+                            </a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="search-box-menu">
+                    <from action="" id="search-box">
+                        <input type="text" id="search-text" placeholder=" Helo bạn muốn tìm gì?">
+                        <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </from>
+                </div>
+                <div class="main-oder">
+                    <div class="oder-1">
+                        <div class="donhang">
+                            <p>Số lượng đơn hàng</p>
+                        </div>
+                        <div class="donhang">
+                            <p>Doanh thu</p>
+                        </div>
+                        <div class="donhang">
+                            <p>Tình trạng</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-main-container">
+                    <div class="menu-main-container-header">
+                        <div class="menu-main-container-tittle">
+                            <h3>Danh Sách Đơn Hàng</h3>
+                        </div>
+                        <div class="menu-main-container-button-them">
+                            <div class="button-them-icon">
+                                <img src="" alt="">
+                            </div>
+                            <div class="button-them-content">
+                                <h4>Thêm</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-main-container-main">
+                        <table class="bangsanpham" id="bangsanphamid">
+                            <thead class="tieudebangsanpham">
+                                <tr>
+                                    <th>STT</th>
+                                    <th>Mã ĐH</th>
+                                    <th>Tên</th>
+                                    <th>Nơi nhận</th>
+                                    <th>Điện thoại </th>
+                                    <th>Số Tiền</th>
+                                    <th>Ngày</th>
+                                    <th>Trạng Thái</th>
+                                    <th>Chức Năng</th>
+                                </tr>
+                            </thead>
+                            <tbody class="thanbangsanpham">
+                                <tr class="">
+                                    <td>1</td>
+                                    <td>DH001</td>
+                                    <td>Tuấn Anh</td>
+                                    <td>32-Hoàng Quốc Việt</td>
+                                    <td>0984183456</td>
+                                    <td>45000</td>
+                                    <td>12-12-2018</td>
+                                    <td>Chưa Xác Thực</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>DH002</td>
+                                    <td>Hưng</td>
+                                    <td>405-Xuân Đỉnh</td>
+                                    <td>
+                                        0876123867
+                                    </td>
+                                    <td>90000</td>
+                                    <td>11-03-2019</td>
+                                    <td>Xác Thực</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>DH003</td>
+                                    <td>Dũng</td>
+                                    <td>An Vĩ - Khoái Châu</td>
+                                    <td>
+                                        0876123867
+                                    </td>
+                                    <td>55000</td>
+                                    <td>15-06-2020</td>
+                                    <td>Xác Thực</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>DH004</td>
+                                    <td>Hiệt</td>
+                                    <td>Thái Bình</td>
+                                    <td>
+                                        0876123867
+                                    </td>
+                                    <td>60000</td>
+                                    <td>23-06-2020</td>
+                                    <td>Xác Thực</td>
+                                </tr>
+                                <tr class="">
+                                    <td>1</td>
+                                    <td>3</td>
+                                    <td>Sữa tươi</td>
+                                    <td>Vinmart</td>
+                                    <td>
+                                        0876123867
+                                    </td>
+                                    <td>70000</td>
+                                    <td>14-02-2020</td>
+                                    <td>Xác Thực</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>4</td>
+                                    <td>Sữa Đặc</td>
+                                    <td>Vinmart</td>
+                                    <td>
+                                        0876123867
+                                    </td>
+                                    <td>86000</td>
+                                    <td>12-04-2020</td>
+                                    <td>Xác Thực</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>4</td>
+                                    <td>Sữa Đặc</td>
+                                    <td>Vinmart</td>
+                                    <td>
+                                        0876123867
+                                    </td>
+                                    <td>86000</td>
+                                    <td>12-04-2020</td>
+                                    <td>Thanh Toán</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+        </div>
+    </section>
+    <!----------------phần danh sách đơn hàng--------->
+
+</body>
+
+</html>
